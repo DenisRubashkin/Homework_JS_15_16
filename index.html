@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Демонстрация: API, классы</title>
+  
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/lodash.min.js"></script>
+  <script type="text/javascript" src="js/lib.js"></script>
+  
+  <meta charset="utf-8">
+</head>
+<body>
+  <div class="wrapper">
+
+  <form class="search">
+    <input type="text" class="search-string" name="search-string" id="search-string">
+    <input type="submit" class="search-button" value="Найти!" name="" id="search">
+  </form>
+  <script type="text/template" id="tmpl">
+    <div class="search-results">
+      <% for(var i = 0; i < foundItems.length; i++) {%>
+        <div class="found-item">
+          <a class="found-link" href="<%=foundItems[i].Url%>" target="_blank"><%=foundItems[i].Title%></a>
+          <span class="display-url"><%=foundItems[i].DisplayUrl%></span>
+          <p class="found-description"><%=foundItems[i].Description%></p>
+        </div>
+      <% }; %>
+    </div>
+  </script>
+
+  </body>
+</html>

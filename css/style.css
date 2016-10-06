@@ -1,0 +1,49 @@
+.wrapper {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.search {
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.search-string {
+  width: 60%;
+}
+
+input {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+}
+
+.found-item {
+  margin: 10px;
+}
+
+.found-link {
+  display: block;
+  width: 70%;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold; 
+}
+
+.display-url {
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #006d21;
+}
+
+.found-description {
+  width: 60%;
+  padding: 5px 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;  
+  color: #666;
+}
